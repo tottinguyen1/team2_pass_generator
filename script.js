@@ -192,9 +192,9 @@ function copyToClipboard() {
   navigator.clipboard.writeText(generatedPassword)
       .then(() => {
         // If successful, show an alert and change the copy icon to a tick
-          alert("Password copied to clipboard!");
           copyIcon.innerText = "check"; // changing copy icon to tick
           copyIcon.style.color = "#4285F4";
+            alert("Password copied to clipboard!");
           setTimeout(() => { // after 1500 ms, changing tick icon back to copy
             copyIcon.innerText = "copy_all";
             copyIcon.style.color = "#050a30"
