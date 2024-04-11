@@ -1,0 +1,98 @@
+<mxfile host="65bd71144e">
+    <diagram id="uxfYXJaPu9uqRXLBXvjK" name="Page-1">
+        <mxGraphModel dx="1066" dy="732" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="140" width="100" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+                    <mxGeometry x="10" y="10" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3">
+                    <mxGeometry x="45" y="80" width="10" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Password &lt;br&gt;Generation &lt;br&gt;System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="140" width="150" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_with_key_security_ghosted;" vertex="1" parent="9">
+                    <mxGeometry x="20" y="10" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Generate&lt;br&gt;Password" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="80" y="290" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="105" y="290"/>
+                        </Array>
+                        <mxPoint x="80" y="333" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="Displays slider/input for pw length" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="320" y="300" as="sourcePoint"/>
+                        <mxPoint x="90" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="Set desired password length" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="90" y="380" as="sourcePoint"/>
+                        <mxPoint x="320" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="Displays Generated Password" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="320" y="540" as="sourcePoint"/>
+                        <mxPoint x="90" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Accesses Password Gen System" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="90" y="223" as="sourcePoint"/>
+                        <mxPoint x="320" y="223" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="&amp;nbsp; Web&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Interface" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="140" width="100" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.website_generic;pointerEvents=1;" vertex="1" parent="29">
+                    <mxGeometry x="10" y="10" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Password generation instruction&lt;br&gt;with desired pw length" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1" source="29">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="400" y="420" as="sourcePoint"/>
+                        <mxPoint x="560" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="Return Generated Password" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1" target="29">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="560" y="500" as="sourcePoint"/>
+                        <mxPoint x="400" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="&lt;h1 style=&quot;line-height: 100%;&quot;&gt;&lt;font face=&quot;Georgia&quot;&gt;Use Case 1&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;The user can specify the length of the generated password using a slider or input field.&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;User accesses the password generator interface, adjusts the slider, and proceeds to generate a password with the desired length.&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBorderColor=none;spacingLeft=7;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="10" width="560" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Clipboard" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="140" width="100" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.clipboard;labelBackgroundColor=#18141D;labelBorderColor=none;fontFamily=Helvetica;fontSize=12;fontColor=none;" vertex="1" parent="39">
+                    <mxGeometry x="10" y="10" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Copy password to clipboard" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="90" y="590" as="sourcePoint"/>
+                        <mxPoint x="320" y="590" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Copy password" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1" target="39">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="320" y="623" as="sourcePoint"/>
+                        <mxPoint x="630" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
