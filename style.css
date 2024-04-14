@@ -1,0 +1,206 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v141/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+  --bs-dark: #343a40; /* Define your own dark color */
+  --bs-purple: #456304; /* Define your own purple color */
+  --bs-indigo: #6610f2; /* Define your own indigo color */
+
+  background-color: var(--bs-dark); /* Use the dark color as the base */
+  background-image: 
+    radial-gradient(circle at center, #6f42c1 0%, transparent 70%),
+    radial-gradient(circle at 10% 20%, #407cb9 0%, transparent 70%),
+    radial-gradient(circle at 90% 80%, #7dbacd 0%, transparent 70%);
+  background-size: cover;
+}
+
+.container {
+  width: 450px;
+  background: #e0f5fe;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container h2 {
+  font-weight: 600;
+  font-size: 1.31rem;
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #d4dbe5;
+}
+
+.wrapper {
+  margin: 1.25rem 1.75rem;
+  
+}
+.wrapper .input-box {
+  position: relative;
+}
+.input-box input {
+  width: 100%;
+  height: 53px;
+  color: #000;
+  background: none;
+  font-size: 1.06rem;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid #aaa;
+  padding: 0 2.85rem 0 1rem;
+}
+.input-box span {
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+  color: #707070;
+}
+.input-box span:hover {
+  color: #050a30 !important;
+}
+.wrapper .pass-indicator {
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background: #fdfdfd;
+  margin-top: 0.75rem;
+  border-radius: 25px;
+}
+
+.pass-indicator::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+.pass-indicator#weak::before {
+  width: 20%;
+  background: #e6444a;
+}
+.pass-indicator#medium::before {
+  width: 50%;
+  background: #f1c80b;
+}
+.pass-indicator#strong::before {
+  width: 100%;
+  background: #4285f4;
+}
+.wrapper .pass-length {
+  margin: 1.56rem 0 1.25rem;
+}
+.pass-length .details {
+  display: flex;
+  justify-content: space-between;
+}
+.pass-length input {
+  width: 100%;
+  height: 5px;
+  color: #050a30;
+}
+
+.pass-settings .options {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.pass-settings .options .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
+}
+
+.options .option:first-child {
+  pointer-events: none;
+}
+
+.options .option:first-child input {
+  opacity: 0.7;
+}
+
+.options .option input {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.options .option label {
+  cursor: pointer;
+  color: #4f4f4f;
+  padding-left: 0.63rem;
+}
+
+.generate-btn {
+  margin: auto;
+}
+
+.wrapper .generate-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+
+.generate-btn:active {
+  scale: 0.92;
+}
+
+.generate-btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
